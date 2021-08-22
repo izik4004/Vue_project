@@ -1,56 +1,35 @@
+  
 {
-    "events": [
-      {
-      "id": "5928101",
+  "events": [
+    {
+      "id": 123,
       "category": "animal welfare",
       "title": "Cat Adoption Day",
-      "description": "find your new frined",
-      "location": "New York",
-      "date": "January 23, 2021",
-      "time": "15:00",
-      "organizers": "aproko"
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
     },
     {
-        "id": "5928101",
-        "category": "animal welfare",
-        "title": "Cat Adoption Day",
-        "description": "find your new frined",
-        "location": "New York",
-        "date": "January 23, 2021",
-        "time": "15:00",
-        "organizers": "aproko"
-      },
-      {
-        "id": "5928101",
-        "category": "animal welfare",
-        "title": "Cat Adoption Day",
-        "description": "find your new frined",
-        "location": "New York",
-        "date": "January 23, 2021",
-        "time": "15:00",
-        "organizers": "aproko"
-      },
-      {
-        "id": "5928101",
-        "category": "animal welfare",
-        "title": "Cat Adoption Day",
-        "description": "find your new frined",
-        "location": "New York",
-        "date": "January 23, 2021",
-        "time": "15:00",
-        "organizers": "aproko"
-      },
-      {
-        "id": "5928101",
-        "category": "animal welfare",
-        "title": "Cat Adoption Day",
-        "description": "find your new frined",
-        "location": "New York",
-        "date": "January 23, 2021",
-        "time": "15:00",
-        "organizers": "aproko"
-      }
-    
-    ]
-  }
-    
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    }
+  ]
+}
