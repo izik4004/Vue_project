@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/izik4004/Vue_project/events',
+    baseURL: 'https://my-json-server.typicode.com/izik4004/Vue_project',
     withCredentials: false,
     headers: {
         Accept: 'application/json',
@@ -12,5 +12,8 @@ const apiClient = axios.create({
 export default {
     getEvents() {
         return apiClient.get('/events')
+    },
+    getEvent(id) {
+        return apiClient.get('/event/' + id)
     }
 }
