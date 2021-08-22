@@ -1,3 +1,4 @@
+
 <template>
   <h1>Events For Good</h1>
   <div class="events">
@@ -8,6 +9,7 @@
 <script>
 // @ is an alias to /src
 import EventCard from "@/components/EventCard.vue";
+import axios from 'axios'
 
 export default {
   name: "EventList",
@@ -16,45 +18,21 @@ export default {
   },
    data() {
     return {
-      events: [
-        {
-        id: 5928101,
-        category: "animal welfare",
-        title: 'Cat Adoption Day',
-        description: 'find your new frined ',
-        location: 'New York',
-        date: 'January 23, 2021',
-        time: '15:00',
-        petsAllowed: true,
-        organizers: 'aproko'
-      },
-       {
-        id: 5928102,
-        category: "animal welfare",
-        title: 'Cat Adoption Day',
-        description: 'find your new frined ',
-        location: 'new york',
-        date: 'January 23, 2021',
-        time: '15:00',
-        petsAllowed: true,
-        organizers: 'aproko'
-      },
-       {
-        id: 5928103,
-        category: 'animal welfare',
-        title: 'Cat Adoption Day',
-        description: 'find your new frined ',
-        location: 'new york',
-        date: 'January 23, 2021',
-        time: '15:00',
-        petsAllowed: true,
-        organizers: 'aproko'
-      }
-      ]
+      events:null
     }
-      
+  },
+
+  created() {
+    axios.get('https://my-json-server.typicode.com/izik4004/Vue_project/events'
+    )
+     .then(response => {
+       this.events = response.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
-      
+     
 };
 
 
