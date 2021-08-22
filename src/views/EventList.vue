@@ -8,11 +8,11 @@
 
 <script>
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
-import axios from 'axios'
+import EventCard from '@/components/EventCard.vue'
+import EventService from '@/services/EventService.js'
 
 export default {
-  name: "EventList",
+  name: 'EventList',
   components: {
     EventCard
   },
@@ -23,8 +23,7 @@ export default {
   },
 
   created() {
-    axios.get('https://my-json-server.typicode.com/izik4004/Vue_project/events'
-    )
+   EventService.getEvents()
      .then(response => {
        this.events = response.data
       })
@@ -33,7 +32,7 @@ export default {
       })
   }
      
-};
+}
 
 
 </script>
